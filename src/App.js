@@ -3,7 +3,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
 
-import { BrowserRouter, Link, Route } from "react-router-dom";
+import {
+  HashRouter as Router,
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import AboutScreen from "./screens/AboutScreen";
 import ContactScreen from "./screens/ContactScreen";
 import RegisterScreen from "./screens/RegisterScreen";
@@ -14,40 +19,27 @@ import BookDetail from "./components/BookDetail";
 function App() {
   return (
     <>
-      <Header />
       <BrowserRouter>
-      <Route path="/">
-        <HomeScreen />
-      </Route>
-      {/* <Link to="/">
-        <HomeScreen />
-      </Link> */}
+        <Routes>
+          <Header />
 
-      <Link to="/about">
-        <AboutScreen />
-      </Link>
+          <Route path="/" element={HomeScreen} exact />
 
-      <Link to="/about">
-        <ContactScreen />
-      </Link>
+          <Route to="/about" element={AboutScreen} />
 
-      <Link to="/register">
-        <RegisterScreen />
-      </Link>
+          <Route to="/contact" element={ContactScreen} />
 
-      <Link to="/login">
-        <LoginScreen />
-      </Link>
+          <Route to="/register" element={RegisterScreen} />
 
-      <Link to="/explore">
-        <ExploreScreen />
-      </Link>
+          <Route to="/login" element={LoginScreen} />
 
-      <Link to="/bookDetail">
-        <BookDetail />
-      </Link>
-</BrowserRouter>
-      <Footer />
+          <Route to="/explore" element={ExploreScreen} />
+
+          <Route to="/bookDetail" element={BookDetail} />
+
+          <Footer />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
