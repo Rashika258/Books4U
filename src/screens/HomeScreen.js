@@ -1,16 +1,15 @@
-import React from 'react';
-import CarouselComponent from '../components/CarouselComponent';
-import FrontTopLayout from "../components/FrontTopLayout";
+import React from "react";
+import BookLayout from "../components/BookLayout";
+import CarouselComponent from "../components/CarouselComponent";
 
 
 function HomeScreen() {
   return (
-  <>
-    <FrontTopLayout />
-    <CarouselComponent />
-    <BookLayout />
-  </>
-  )
+    <>
+      <CarouselComponent />
+      <BookLayout />
+    </>
+  );
 }
 
-export default HomeScreen
+export default HomeScreen;

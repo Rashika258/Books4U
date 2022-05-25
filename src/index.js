@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-import './static/css/bootstrap.min.css';
-import './static/css/tailwind.min.css';
+import "./static/css/bootstrap.min.css";
+import "./static/css/tailwind.min.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// import { BrowserRouter, Route } from "react-router-dom";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
