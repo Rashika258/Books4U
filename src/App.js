@@ -20,25 +20,24 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <Header />
         <Routes>
-          <Header />
+          {/* <Route path="/" element={<HomeScreen />}  /> */}
+          <Route index element={<HomeScreen />} />
 
-          <Route path="/" element={HomeScreen} exact />
+          <Route path="/about" element={<AboutScreen />} />
 
-          <Route to="/about" element={AboutScreen} />
+          <Route path="/contact" element={<ContactScreen />} />
 
-          <Route to="/contact" element={ContactScreen} />
+          <Route path="/register" element={<RegisterScreen />} />
 
-          <Route to="/register" element={RegisterScreen} />
+          <Route path="/login" element={<LoginScreen />} />
 
-          <Route to="/login" element={LoginScreen} />
+          <Route path="/explore" element={<ExploreScreen />} />
 
-          <Route to="/explore" element={ExploreScreen} />
-
-          <Route to="/bookDetail" element={BookDetail} />
-
-          <Footer />
+          <Route path="/bookDetail" element={<BookDetail />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
