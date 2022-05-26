@@ -1,16 +1,23 @@
 import React from "react";
 import book1 from "../static/images/book1.jpg";
-import book2 from "../static/images/book2.jpg"
-import book3 from "../static/images/book3.jpg"
-import book4 from "../static/images/book4.jpg"
-import book5 from "../static/images/book5.jpg"
-import book6 from "../static/images/book6.jpg"
+import book2 from "../static/images/book2.jpg";
+import book3 from "../static/images/book3.jpg";
+import book4 from "../static/images/book4.jpg";
+import book5 from "../static/images/book5.jpg";
+import book6 from "../static/images/book6.jpg";
 
-function FrontTopLayout() {
+function AboutTopLayout() {
   return (
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
-     
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+            Books4U
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            We provide personalized recommendations
+          </p>
+        </div>
         <div class="flex flex-wrap md:-m-2 -m-1">
           <div class="flex flex-wrap w-1/2">
             <div class="md:p-2 p-1 w-1/2">
@@ -64,4 +71,4 @@ function FrontTopLayout() {
   );
 }
 
-export default FrontTopLayout;
+export default AboutTopLayout;

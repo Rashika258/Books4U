@@ -2,10 +2,12 @@
 import React from "react";
 import { Container, Nav, Navbar, Dropdown } from "react-bootstrap";
 
+const navbar = {backgroundColor: '#1B1A17',color:'#fff'};
+
 function Header() {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar style={navbar} variant="dark">
         <Container>
           <Navbar.Brand href="#home">Books4U</Navbar.Brand>
           <Nav className="ml-auto">
@@ -13,7 +15,7 @@ function Header() {
             <Nav.Link href="#features">About</Nav.Link>
             <Nav.Link href="#pricing">Contact</Nav.Link>
             <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
+              <Dropdown.Toggle variant="dark" id="dropdown-basic">
                 Profile
               </Dropdown.Toggle>
 

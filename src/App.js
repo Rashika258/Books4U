@@ -15,12 +15,14 @@ import RegisterScreen from "./screens/RegisterScreen";
 import LoginScreen from "./screens/LoginScreen";
 import ExploreScreen from "./screens/ExploreScreen";
 import BookDetail from "./components/BookDetail";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Header />
+        {/* <Navbar /> */}
         <Routes>
           {/* <Route path="/" element={<HomeScreen />}  /> */}
           <Route index element={<HomeScreen />} />

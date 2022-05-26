@@ -4,6 +4,17 @@ import { MenuBookRounded } from "@mui/icons-material";
 
 function Footer() {
   return (
+    <>
+    {/* <div
+    style={{
+      width: "50%",
+      margin: "auto",
+      marginTop: "50px",
+      border: "0",
+      height: "0",
+      boxShadow: "0 0 10px 1px black",
+    }}
+  ></div> */}
     <footer class="text-gray-600 body-font">
       <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -91,6 +102,7 @@ function Footer() {
         </span>
       </div>
     </footer>
+    </>
   );
 }
 

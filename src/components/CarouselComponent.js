@@ -1,39 +1,54 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import book1 from "../static/images/book1.jpg";
-import book2 from "../static/images/book2.jpg";
-import book3 from "../static/images/book3.jpg";
-import book4 from "../static/images/book4.jpg";
-import book5 from "../static/images/book5.jpg";
-import book6 from "../static/images/book6.jpg";
+import book1 from "../static/images/car1.jpg";
+import book2 from "../static/images/car2.jpg";
+import book3 from "../static/images/car3.jpg";
+
 
 function CarouselComponent() {
   return (
-    <Carousel fade>
+    <Carousel fade style={{ width: "100%", height: "450px" }}>
       <Carousel.Item>
-        <img className="d-block w-100" src={book1} alt="First slide" />
+        <img
+          style={{ width: "100%", height: "450px", opacity: "0.78" }}
+          className="d-block w-100"
+          src={book1}
+          alt="First slide"
+        />
 
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 style={{ fontWeight: "800", fontSize: "50px", color: "#1B1A17" }}>
+            Books let you travel without moving your feet
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-30" src={book2} alt="Second slide" />
+        <img
+          style={{ width: "100%", height: "450px" , opacity: "0.78" }}
+          className="d-block w-100"
+          src={book2}
+          alt="Second slide"
+        />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 style={{ fontWeight: "800", fontSize: "50px", color: "#1B1A17" }}>
+            The library is inhabited by spirits that come out of the pages at
+            night
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={book3} alt="Third slide" />
+        <img
+          style={{ width: "100%", height: "450px" , opacity: "0.78"}}
+          className="d-block w-100"
+          src={book3}
+          alt="Third slide"
+        />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3 style={{ fontWeight: "800", fontSize: "50px", color: "#1B1A17" }}>
+            A half-read book is a half-finished love affair.
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
